@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
 
-        var contexto = new AnnotationConfigApplicationContext();
+        var contexto = new AnnotationConfigApplicationContext(Main.class);
         contexto.register(HelloWorld.class);
         contexto.refresh();
         
